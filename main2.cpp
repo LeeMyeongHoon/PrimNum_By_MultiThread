@@ -1,6 +1,6 @@
 // 일반 완전탐색?
 
-#if MAIN2
+#ifdef MAIN_2
 #include <ctime>
 #include <Windows.h>
 #include <iostream>

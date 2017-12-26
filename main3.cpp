@@ -107,7 +107,7 @@ void Counting(int thrdNum)
 		if (!isChecked[testNum])
 		{
 			mtx.unlock();
-			for (unsigned int multiple = 2 * testNum; multiple <= lastNum; multiple += testNum)
+			for (unsigned int multiple = 2 * testNum; multiple <= lastNum; multiple += offset)
 			{
 				mtx.lock();
 				if (isChecked[multiple] == false)
